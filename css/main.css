@@ -1,3 +1,136 @@
 @charset "UTF-8";
 
 /* CSS DOCUMENT */
+
+/*Main Container */
+#mainContainer {
+  margin: 0 auto;
+  width: 1080px;
+  color: white;
+  text-align: center;
+}
+/* -- HEADER -- */
+.headerContainer{
+  height: 140px;
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav {
+  height: 50px;
+  width: 850px;
+  background-color: black;
+  margin: 0 auto;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+.mainTitle{
+  width:350px;
+  height: 50px;
+  background-color: black;
+  margin-top: 40px;
+}
+.socialHeader {
+  width:110px;
+  height: 35px;
+  background-color: black;
+}
+
+/* -- HERO IMG -- */
+.mainHero {
+  width: 1080px;
+  height: 430px;
+  background-color: black;
+}
+.hero{
+  width:1080px;
+  height: 360px;
+  background-color: black;
+  margin-top: 40px;
+}
+
+/* WELCOME PAGE BEGINS*/
+
+
+/* HOME PAGE BEGINS */
+.buttonContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navButton {
+  width: 460px;
+  height: 260px;
+  background-color: black;
+  margin: 40px 40px 0px 40px;
+}
+.update {
+  width: 1080px;
+  height: 200px;
+  background-color: black;
+  margin-top: 40px;
+}
+
+/* ABOUT PAGE BEGINS */
+
+.ourStory{
+  width: 1080px;
+  height: 320px;
+  background-color: black;
+  margin-top: 40px;
+}
+
+.galleryContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.img{
+  width: 300px;
+  height: 270px;
+  background-color: black;
+  margin-top: 40px;
+}
+.button{
+  width: 600px;
+  height: 80px;
+  background-color: black;
+  margin-top: 40px;
+  margin: 0 auto;
+}
+/* BEER PAGE BEGINS */
+/* CAREERS PAGE BEGINS */
+/* CONTACT PAGE BEGINS */
+
+/* -- FOOTER -- */
+.footerContainer {
+  width: 1080px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.footerNav{
+  width: 180px;
+  height: 180px;
+  background-color: black;
+}
+.info{
+  width: 230px;
+  height: 180px;
+  background-color: black;
+}
+.footerLogo {
+  width: 180px;
+  height: 180px;
+  background-color: black;
+}
