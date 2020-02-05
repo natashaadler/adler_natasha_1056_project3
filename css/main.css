@@ -54,7 +54,25 @@
 }
 
 /* WELCOME PAGE BEGINS*/
-
+#mainImage{
+  width: 1080px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: black;
+}
+.mainButton{
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.enter{
+  width: 400px;
+  height: 50px;
+  background-color: blue;
+  margin-top: 10px;
+}
 
 /* HOME PAGE BEGINS */
 .buttonContainer{
@@ -68,12 +86,6 @@
   height: 260px;
   background-color: black;
   margin: 40px 40px 0px 40px;
-}
-.update {
-  width: 1080px;
-  height: 200px;
-  background-color: black;
-  margin-top: 40px;
 }
 
 /* ABOUT PAGE BEGINS */
@@ -107,8 +119,93 @@
   margin: 0 auto;
 }
 /* BEER PAGE BEGINS */
+.beerTypes{
+
+}
+.beer{
+  width: 1080px;
+  height: 430px;
+  background-color: black;
+  margin-top: 10px;
+}
+.float{
+  width: 500px;
+  height: 340px;
+  background-color: red;
+  float: right;
+  margin-right: 40px;
+  margin-top: 45px;
+}
+
 /* CAREERS PAGE BEGINS */
+.aboutTeam{
+  width: 1080px;
+  height: 400px;
+  background-color: black;
+  margin-top: 40px;
+}
+.careerOptions{
+  width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.career{
+  width: 460px;
+  height: 260px;
+  background-color: black;
+  margin: 40px 40px 0px 40px;
+}
 /* CONTACT PAGE BEGINS */
+.infoContainer{
+  width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.info{
+  width: 460px;
+  height: 260px;
+  background-color: black;
+  margin: 40px 40px 0px 40px;
+}
+.map{
+  width: 1080px;
+  height: 360px;
+  background-color: black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.contactContainer{
+  width: 1020px;
+  height: 460px;
+  background-color: black;
+  margin: 0 auto;
+}
+.contactForm{
+  width: 420px;
+  height: 380px;
+  background-color: white;
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+/* -- Items on Multiple Pages */
+.update {
+  width: 1080px;
+  height: 200px;
+  background-color: black;
+  margin-top: 40px;
+}
+.largeButton{
+  width: 1080px;
+  height: 200px;
+  background-color: black;
+  margin-top: 40px;
+}
 
 /* -- FOOTER -- */
 .footerContainer {
@@ -124,7 +221,7 @@
   height: 180px;
   background-color: black;
 }
-.info{
+.footerInfo{
   width: 230px;
   height: 180px;
   background-color: black;
