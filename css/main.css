@@ -2,12 +2,30 @@
 
 /* CSS DOCUMENT */
 
+a:link, a:visited {
+ 	text-decoration:none;
+ 	color: inherit;
+}
+
+a:hover, a:active {
+	text-decoration:none;
+	color: #544343;
+}
+
+ul li {
+	display: inline-block;
+}
+
+.hidden{
+	display: none;
+}
+
 /*Main Container */
 #mainContainer {
   margin: 0 auto;
   width: 1080px;
-  color: white;
   text-align: center;
+  font-size: 16px;
 }
 /* -- HEADER -- */
 .headerContainer{
@@ -20,37 +38,37 @@
 .nav {
   height: 50px;
   width: 850px;
-  background-color: black;
   margin: 0 auto;
+  border-bottom: 1px solid black;
 }
+.nav li {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
 .logo{
   width: 100px;
   height: 100px;
   background-color: black;
 }
-.mainTitle{
-  width:350px;
-  height: 50px;
-  background-color: black;
-  margin-top: 40px;
-}
+
 .socialHeader {
-  width:110px;
-  height: 35px;
-  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 /* -- HERO IMG -- */
-.mainHero {
+.mainHero img{
   width: 1080px;
   height: 430px;
-  background-color: black;
+  border-radius: 5px;
 }
-.hero{
+.hero img{
   width:1080px;
-  height: 360px;
-  background-color: black;
+  height: 400px;
   margin-top: 40px;
+  border-radius: 5px;
 }
 
 /* WELCOME PAGE BEGINS*/
@@ -59,7 +77,6 @@
   height: 600px;
   margin: 0 auto;
   margin-top: 40px;
-  background-color: black;
 }
 .mainButton{
   width: 1080px;
@@ -84,17 +101,26 @@
 .navButton {
   width: 460px;
   height: 260px;
-  background-color: black;
   margin: 40px 40px 0px 40px;
 }
 
 /* ABOUT PAGE BEGINS */
 
 .ourStory{
-  width: 1080px;
-  height: 320px;
-  background-color: black;
+  width: 1020px;
+  margin: 0 auto;
   margin-top: 40px;
+  border-bottom: 0.5px solid black;
+  border-top: 0.5px solid black;
+}
+.ourStory h2{
+  padding: 40px 20px 20px 20px;
+}
+.ourStory p{
+  text-align: left;
+  padding: 0 20px 40px 20px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .galleryContainer{
@@ -105,43 +131,61 @@
   margin-bottom: 40px;
 }
 
-.img{
-  width: 300px;
-  height: 270px;
-  background-color: black;
+.galleryContainer img{
+  width: 320px;
+  height: 280px;
   margin-top: 40px;
+  border-radius: 5px;
 }
 .button{
   width: 600px;
   height: 80px;
-  background-color: black;
   margin-top: 40px;
   margin: 0 auto;
+  border-radius: 5px;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8f0222+0,a90329+47,a90329+47,6d0019+100 */
+  background: rgb(143,2,34); /* Old browsers */
+  background: -webkit-linear-gradient(rgba(143,2,34,1) 0%, rgba(169,3,41,1) 47%, rgba(169,3,41,1) 47%, rgba(109,0,25,1) 100%);
+  background: -o-linear-gradient(rgba(143,2,34,1) 0%, rgba(169,3,41,1) 47%, rgba(169,3,41,1) 47%, rgba(109,0,25,1) 100%);
+  background: linear-gradient(rgba(143,2,34,1) 0%, rgba(169,3,41,1) 47%, rgba(169,3,41,1) 47%, rgba(109,0,25,1) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f0222', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+.button p {
+  padding: 30px;
 }
 /* BEER PAGE BEGINS */
-.beerTypes{
-
-}
 .beer{
   width: 1080px;
   height: 430px;
   background-color: black;
   margin-top: 10px;
 }
+.beer img{
+  width: 1080px;
+}
+
 .float{
   width: 500px;
   height: 340px;
-  background-color: red;
   float: right;
   margin-right: 40px;
   margin-top: 45px;
+  color: white;
+}
+.float h3{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.float p{
+  font-size: 20px;
+  line-height: 28px;
 }
 
 /* CAREERS PAGE BEGINS */
 .aboutTeam{
   width: 1080px;
   height: 400px;
-  background-color: black;
   margin-top: 40px;
 }
 .careerOptions{
@@ -154,7 +198,6 @@
 .career{
   width: 460px;
   height: 260px;
-  background-color: black;
   margin: 40px 40px 0px 40px;
 }
 /* CONTACT PAGE BEGINS */
@@ -168,13 +211,11 @@
 .info{
   width: 460px;
   height: 260px;
-  background-color: black;
   margin: 40px 40px 0px 40px;
 }
 .map{
   width: 1080px;
   height: 360px;
-  background-color: black;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -197,37 +238,26 @@
 .update {
   width: 1080px;
   height: 200px;
-  background-color: black;
   margin-top: 40px;
 }
-.largeButton{
+.largeButton img{
   width: 1080px;
   height: 200px;
-  background-color: black;
   margin-top: 40px;
+}
+.floatText{
+  float: left;
 }
 
 /* -- FOOTER -- */
 .footerContainer {
   width: 1080px;
-  height: 200px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 40px;
+  border-top: 1px solid black;
 }
-.footerNav{
-  width: 180px;
-  height: 180px;
-  background-color: black;
-}
-.footerInfo{
-  width: 230px;
-  height: 180px;
-  background-color: black;
-}
-.footerLogo {
-  width: 180px;
-  height: 180px;
-  background-color: black;
+.footerNav ul li{
+  padding: 30px;
 }
