@@ -2,6 +2,16 @@
 
 /* CSS DOCUMENT */
 
+/*Main Container */
+#mainContainer {
+  margin: 0 auto;
+  width: 1080px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'lora', 'Work Sans', Helvetica, Arial, sans-serif;
+}
+
+/* Some Resets*/
 a:link, a:visited {
  	text-decoration:none;
  	color: inherit;
@@ -19,14 +29,24 @@ ul li {
 .hidden{
 	display: none;
 }
-
-/*Main Container */
-#mainContainer {
-  margin: 0 auto;
-  width: 1080px;
-  text-align: center;
+.selected {
+	color: #544343;
+}
+h2{
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+h3{
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+p{
+  font-family: 'Lora', sans-serif;
   font-size: 16px;
 }
+
 /* -- HEADER -- */
 .headerContainer{
   height: 140px;
@@ -46,10 +66,10 @@ ul li {
   padding-left: 40px;
 }
 
-.logo{
-  width: 100px;
-  height: 100px;
-  background-color: black;
+.logo img{
+  width: 200px;
+  padding-top: 20px;
+  margin-left: 450px;
 }
 
 .socialHeader {
@@ -72,23 +92,25 @@ ul li {
 }
 
 /* WELCOME PAGE BEGINS*/
-#mainImage{
-  width: 1080px;
+.mainImage{
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.mainImage img{
+  width: 900px;
   height: 600px;
   margin: 0 auto;
-  margin-top: 40px;
+  border-radius: 5px;
 }
+
 .mainButton{
-  width: 1080px;
+  width: 100px;
+  padding: 20px;
+  background-color: black;
+  color: white;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.enter{
-  width: 400px;
-  height: 50px;
-  background-color: blue;
-  margin-top: 10px;
+  border-radius: 10px;
 }
 
 /* HOME PAGE BEGINS */
@@ -102,6 +124,36 @@ ul li {
   width: 460px;
   height: 260px;
   margin: 40px 40px 0px 40px;
+  border-radius: 5px;
+}
+.navButton p{
+  margin: 100px 20px 80px 20px;
+  font-size: 50px;
+  color: white;
+}
+.backgroundHome1{
+  width: 460px;
+  height: 260px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
+}
+.backgroundHome2{
+  width: 460px;
+  height: 260px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
+}
+.backgroundHome3{
+  width: 460px;
+  height: 260px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
+}
+.backgroundHome4{
+  width: 460px;
+  height: 260px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
 }
 
 /* ABOUT PAGE BEGINS */
@@ -137,31 +189,37 @@ ul li {
   margin-top: 40px;
   border-radius: 5px;
 }
-.button{
-  width: 600px;
-  height: 80px;
-  margin-top: 40px;
-  margin: 0 auto;
-  border-radius: 5px;
-   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8f0222+0,a90329+47,a90329+47,6d0019+100 */
-  background: rgb(143,2,34); /* Old browsers */
-  background: -webkit-linear-gradient(rgba(143,2,34,1) 0%, rgba(169,3,41,1) 47%, rgba(169,3,41,1) 47%, rgba(109,0,25,1) 100%);
-  background: -o-linear-gradient(rgba(143,2,34,1) 0%, rgba(169,3,41,1) 47%, rgba(169,3,41,1) 47%, rgba(109,0,25,1) 100%);
-  background: linear-gradient(rgba(143,2,34,1) 0%, rgba(169,3,41,1) 47%, rgba(169,3,41,1) 47%, rgba(109,0,25,1) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f0222', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
-}
-.button p {
-  padding: 30px;
-}
+
 /* BEER PAGE BEGINS */
+
 .beer{
   width: 1080px;
   height: 430px;
-  background-color: black;
   margin-top: 10px;
 }
-.beer img{
+.backgroundBeer1{
   width: 1080px;
+  height: 430px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
+}
+.backgroundBeer2{
+  width: 1080px;
+  height: 430px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
+}
+.backgroundBeer3{
+  width: 1080px;
+  height: 430px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
+}
+.backgroundBeer4{
+  width: 1080px;
+  height: 430px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
 }
 
 .float{
@@ -170,7 +228,6 @@ ul li {
   float: right;
   margin-right: 40px;
   margin-top: 45px;
-  color: white;
 }
 .float h3{
   font-size: 40px;
@@ -185,9 +242,23 @@ ul li {
 /* CAREERS PAGE BEGINS */
 .aboutTeam{
   width: 1080px;
-  height: 400px;
   margin-top: 40px;
+  margin-bottom: 40px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
+.aboutTeam h2{
+  padding: 20px;
+  margin-top: 20px;
+}
+.aboutTeam p{
+  width: 800px;
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  line-height: 20px;
+}
+
 .careerOptions{
   width: 1080px;
   display: flex;
@@ -196,9 +267,42 @@ ul li {
   justify-content: space-around;
 }
 .career{
-  width: 460px;
-  height: 260px;
-  margin: 40px 40px 0px 40px;
+  width: 490px;
+  height: 250px;
+  margin: 20px 20px 20px 20px;
+  border: 1px solid black;
+}
+.career h3{
+  padding: 40px 20px 0 20px;
+}
+.career p{
+  margin: 40px;
+  text-align: left;
+  font-size: 18px;
+}
+.background1{
+  width: 490px;
+  height: 250px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
+}
+.background2{
+  width: 490px;
+  height: 250px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
+}
+.background3{
+  width: 490px;
+  height: 250px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
+}
+.background4{
+  width: 490px;
+  height: 250px;
+  background-image: url("../images/beer_samples.jpeg");
+  background-size: cover;
 }
 /* CONTACT PAGE BEGINS */
 .infoContainer{
@@ -209,44 +313,80 @@ ul li {
   justify-content: space-around;
 }
 .info{
-  width: 460px;
-  height: 260px;
-  margin: 40px 40px 0px 40px;
+  width: 200px;
+  margin: 40px 40px 20px 40px;
 }
-.map{
-  width: 1080px;
-  height: 360px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.info img{
+  width: 200px;
 }
+
+.info p{
+  padding: 20px;
+}
+
 .contactContainer{
   width: 1020px;
-  height: 460px;
-  background-color: black;
   margin: 0 auto;
+  border-top: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.contactForm{
-  width: 420px;
-  height: 380px;
+.contactArea{
+  width: 480px;
   background-color: white;
-  float: right;
   margin-top: 40px;
-  margin-right: 40px;
+}
+.contactArea h2{
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 40px;
+}
+.contactArea p{
+  padding: 40px;
+  line-height: 22px;
+  font-size: 18px;
+  text-align: left;
+}
+#contactForm{
+  padding: 40px;
+  text-align: left;
+  line-height: 30px;
+  border: 2px solid black;
+  font-size: 18px;
 }
 
 /* -- Items on Multiple Pages */
-.update {
+.update img{
   width: 1080px;
   height: 200px;
   margin-top: 40px;
 }
-.largeButton img{
-  width: 1080px;
-  height: 200px;
-  margin-top: 40px;
+.largeButton{
+  box-shadow: 0 1px 4px rgba(0,0,0,.6);
+  background-color: red;
+  border-radius: 5px;
 }
-.floatText{
-  float: left;
+
+.largeButton:hover{
+  background: rgb(143,2,34); /* Old browsers */
+  background: -webkit-linear-gradient(rgba(143,2,34,1) 0%, rgba(169,3,41,1) 47%, rgba(169,3,41,1) 47%, rgba(109,0,25,1) 100%);
+  background: -o-linear-gradient(rgba(143,2,34,1) 0%, rgba(169,3,41,1) 47%, rgba(169,3,41,1) 47%, rgba(109,0,25,1) 100%);
+  background: linear-gradient(rgba(143,2,34,1) 0%, rgba(169,3,41,1) 47%, rgba(169,3,41,1) 47%, rgba(109,0,25,1) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f0222', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+  border-radius: 5px;
+}
+.largeButton a{
+  color: white;
+  width: 1080px;
+	cursor: pointer;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.largeButton a p {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 40px;
 }
 
 /* -- FOOTER -- */
