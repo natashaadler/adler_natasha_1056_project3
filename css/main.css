@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 /* CSS DOCUMENT */
+@keyframes SlideIn {
+  0%{ transform: translateX(-800px);
+  }
+  100%{transform: translateX(0px);
+  }
+}
 
 /*Main Container */
 #mainContainer {
@@ -8,7 +14,7 @@
   width: 1080px;
   text-align: center;
   font-size: 16px;
-  font-family: 'lora', 'Work Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 /* Some Resets*/
@@ -33,49 +39,66 @@ ul li {
 	color: #544343;
 }
 h2{
-  font-family: 'Lora', serif;
+  font-family: 'Lobster', cursive;
   font-weight: bold;
   font-size: 22px;
 }
 h3{
-  font-family: 'Lora', serif;
+  font-family: 'Lobster', cursive;
   font-weight: bold;
   font-size: 20px;
 }
 p{
-  font-family: 'Lora', sans-serif;
+  font-family: 'Chivo', sans-serif;
   font-size: 16px;
 }
 
 /* -- HEADER -- */
 .headerContainer{
-  height: 140px;
+  height: 180px;
   width: 1080px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .nav {
-  height: 50px;
-  width: 850px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 1080px;
   margin: 0 auto;
   border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 .nav li {
   padding-right: 40px;
   padding-left: 40px;
 }
+.search{
+  float: left;
+  padding: 10px 0px 10px 10px;
+  margin-top: 10px;
+}
+.search input{
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+  border-radius: 20px;
+}
 
 .logo img{
-  width: 200px;
+  width: 250px;
   padding-top: 20px;
-  margin-left: 450px;
+  margin-right: 100px;
 }
 
 .socialHeader {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+
 }
 
 /* -- HERO IMG -- */
@@ -87,21 +110,20 @@ p{
 .hero img{
   width:1080px;
   height: 400px;
-  margin-top: 40px;
+  margin-top: 20px;
   border-radius: 5px;
 }
 
 /* WELCOME PAGE BEGINS*/
 .mainImage{
+  width: 1080px;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  padding: 20px 0px;
 }
+
 .mainImage img{
-  width: 900px;
-  height: 600px;
-  margin: 0 auto;
-  border-radius: 5px;
+  width: 1000px;
+  animation: 2s ease-in 0s 1 both SlideIn;
 }
 
 .mainButton{
@@ -111,6 +133,11 @@ p{
   color: white;
   margin: 0 auto;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+.mainButton:hover{
+  transform: translateY(-2px);
+  transition: all .2s;
 }
 
 /* HOME PAGE BEGINS */
@@ -125,34 +152,43 @@ p{
   height: 260px;
   margin: 40px 40px 0px 40px;
   border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
 }
+.navButton:hover{
+  transform: translateY(-2px);
+  transition: all .2s;
+}
+
 .navButton p{
-  margin: 100px 20px 80px 20px;
+  margin: 80px 20px 80px 20px;
   font-size: 50px;
   color: white;
+  padding: 30px;
+  font-weight: bolder;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
 .backgroundHome1{
   width: 460px;
   height: 260px;
-  background-image: url("../images/beer_samples.jpeg");
+  background-image: url("../images/home_about.png");
   background-size: cover;
 }
 .backgroundHome2{
   width: 460px;
   height: 260px;
-  background-image: url("../images/beer_samples.jpeg");
+  background-image: url("../images/home_beer.png");
   background-size: cover;
 }
 .backgroundHome3{
   width: 460px;
   height: 260px;
-  background-image: url("../images/beer_samples.jpeg");
+  background-image: url("../images/home_careers.png");
   background-size: cover;
 }
 .backgroundHome4{
   width: 460px;
   height: 260px;
-  background-image: url("../images/beer_samples.jpeg");
+  background-image: url("../images/home_contact.png");
   background-size: cover;
 }
 
@@ -192,51 +228,73 @@ p{
 
 /* BEER PAGE BEGINS */
 
+.beerTitle{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 20px 0px;
+  padding: 20px 0px;
+}
+.beerTitle h2{
+  font-size: 42px;
+}
 .beer{
   width: 1080px;
-  height: 430px;
-  margin-top: 10px;
+  height: 370px;
+  margin-top: 20px;
+  color: white;
 }
 .backgroundBeer1{
   width: 1080px;
-  height: 430px;
-  background-image: url("../images/beer_samples.jpeg");
+  height: 370px;
+  background-image: url("../images/beer_copperLager.png");
   background-size: cover;
+  border-radius: 5px;
 }
 .backgroundBeer2{
   width: 1080px;
-  height: 430px;
-  background-image: url("../images/beer_samples.jpeg");
+  height: 370px;
+  background-image: url("../images/beer_select.png");
   background-size: cover;
+  border-radius: 5px;
 }
 .backgroundBeer3{
   width: 1080px;
-  height: 430px;
-  background-image: url("../images/beer_samples.jpeg");
+  height: 370px;
+  background-image: url("../images/beer_Blacklager.png");
   background-size: cover;
+  border-radius: 5px;
 }
 .backgroundBeer4{
   width: 1080px;
-  height: 430px;
-  background-image: url("../images/beer_samples.jpeg");
+  height: 370px;
+  background-image: url("../images/beer_chelada.png");
   background-size: cover;
+  border-radius: 5px;
 }
 
 .float{
   width: 500px;
-  height: 340px;
-  float: right;
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
   margin-right: 40px;
-  margin-top: 45px;
+  margin-top: 40px;
+  background-color: rgba(255, 0, 0, 0.3);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .float h3{
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .float p{
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /* CAREERS PAGE BEGINS */
@@ -265,6 +323,7 @@ p{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  color: white;
 }
 .career{
   width: 490px;
@@ -273,36 +332,54 @@ p{
   border: 1px solid black;
 }
 .career h3{
-  padding: 40px 20px 0 20px;
+  margin: 20px 20px 0 20px;
+  padding-top: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(24, 24, 24, 0.4);
+  font-size: 25px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 .career p{
-  margin: 40px;
+  padding: 20px 10px 40px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: left;
   font-size: 18px;
+  line-height: 22px;
+  word-spacing: 2px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(24, 24, 24, 0.4);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 .background1{
   width: 490px;
   height: 250px;
-  background-image: url("../images/beer_samples.jpeg");
+  background-image: url("../images/careers_farmer.png");
   background-size: cover;
+  border-radius: 10px;
 }
 .background2{
   width: 490px;
   height: 250px;
-  background-image: url("../images/beer_samples.jpeg");
+  background-image: url("../images/careers_brewMaster.png");
   background-size: cover;
+  border-radius: 10px;
 }
 .background3{
   width: 490px;
   height: 250px;
-  background-image: url("../images/beer_samples.jpeg");
+  background-image: url("../images/careers_managment.png");
   background-size: cover;
+  border-radius: 10px;
 }
 .background4{
   width: 490px;
   height: 250px;
-  background-image: url("../images/beer_samples.jpeg");
+  background-image: url("../images/careers_tasteTester.png");
   background-size: cover;
+  border-radius: 10px;
 }
 /* CONTACT PAGE BEGINS */
 .infoContainer{
@@ -318,6 +395,7 @@ p{
 }
 .info img{
   width: 200px;
+  border-radius: 5px;
 }
 
 .info p{
@@ -353,19 +431,25 @@ p{
   padding: 40px;
   text-align: left;
   line-height: 30px;
-  border: 2px solid black;
-  font-size: 18px;
+  border: 5px solid #C8102E;
+  border-radius: 5px;
+  font-size: 16px;
+}
+#contactForm input{
+  display: block;
+  padding: 5px;
 }
 
 /* -- Items on Multiple Pages */
 .update img{
   width: 1080px;
-  height: 200px;
+  height: 300px;
   margin-top: 40px;
+  border-radius: 5px;
 }
 .largeButton{
   box-shadow: 0 1px 4px rgba(0,0,0,.6);
-  background-color: red;
+  background-color: #C8102E;
   border-radius: 5px;
 }
 
@@ -396,8 +480,18 @@ p{
   flex-direction: column;
   justify-content: space-between;
   margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footerNav{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 1080px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
   border-top: 1px solid black;
 }
-.footerNav ul li{
-  padding: 30px;
+
+.footerNav li{
+  padding-right: 40px;
+  padding-left: 40px;
 }
