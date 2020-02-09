@@ -14,7 +14,7 @@
   width: 1080px;
   text-align: center;
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Chivo', Helvetica, Arial, serif;
 }
 
 /* Some Resets*/
@@ -41,7 +41,7 @@ ul li {
 h2{
   font-family: 'Lobster', cursive;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 26px;
 }
 h3{
   font-family: 'Lobster', cursive;
@@ -89,16 +89,18 @@ p{
 .logo img{
   width: 250px;
   padding-top: 20px;
-  margin-right: 100px;
+  margin-right: 40px;
 }
 
-.socialHeader {
+.socialHeader{
+  height: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   margin-top: 20px;
   margin-right: 20px;
-
+}
+.socialHeader img{
+  padding: 5px;
 }
 
 /* -- HERO IMG -- */
@@ -123,23 +125,27 @@ p{
 
 .mainImage img{
   width: 1000px;
+  margin-top: 40px;
   animation: 2s ease-in 0s 1 both SlideIn;
 }
 
 .mainButton{
   width: 100px;
-  padding: 20px;
+
   background-color: black;
   color: white;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
 }
 .mainButton:hover{
   transform: translateY(-2px);
   transition: all .2s;
 }
-
+.mainButton a p {
+  margin: 5px;
+  padding: 10px;
+}
 /* HOME PAGE BEGINS */
 .buttonContainer{
   display: flex;
@@ -160,10 +166,10 @@ p{
 }
 
 .navButton p{
-  margin: 80px 20px 80px 20px;
-  font-size: 50px;
+  margin: 0px 20px 20px 10px;
+  font-size: 60px;
   color: white;
-  padding: 30px;
+  padding: 80px;
   font-weight: bolder;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
